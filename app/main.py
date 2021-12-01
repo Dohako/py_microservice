@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
+from app.api.movies import movies
+
 app = FastAPI()
 
-@app.get('/')
-async def index():
-    return {"First": "Run"}
+app.include_router(movies)
