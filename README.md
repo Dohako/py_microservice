@@ -10,3 +10,7 @@ Also here I will store some of information about SOA so I(and maybe not me alone
 ___
 
 Microservices is meant to split large applications monolith to smaller applications that in whole will represent same functionality.
+
+___
+
+Command for uvicorn test: `uvicorn app.main:app --reload`
