@@ -2,11 +2,10 @@ from typing import List
 from fastapi import Header, APIRouter
 from fastapi.exceptions import HTTPException
 
-from app.api.models import MovieIn, MovieOut
+from app.api.models import MovieIn, MovieOut, MovieUpdate
 from app.api import db_manager
 
 from app.api.service import is_cast_present
-from movie_service.app.api.models import MovieUpdate
 
 movies = APIRouter()
 

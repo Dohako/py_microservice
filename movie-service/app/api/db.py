@@ -3,17 +3,8 @@ from sqlalchemy import (Column, Integer, MetaData,
                         ARRAY)
 
 from databases import Database
-from dotenv import load_dotenv
 from os import getenv
 
-if not load_dotenv("./app/api/.env"):
-    raise AssertionError(".env file is not located")
-psql_user, psql_pass = getenv("POSTGRES_USER"), getenv("POSTGRES_PASS")
-
-if not psql_user or not psql_pass:
-    raise ValueError("pass or username is not in .env")
-
-# DATABASE_URL = f"postgresql://{psql_user}:{psql_pass}@localhost/movie_db"
 DATABASE_URL = getenv('DATABASE_URL')
 
 engine = create_engine(DATABASE_URL)
