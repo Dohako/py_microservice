@@ -20,3 +20,8 @@ ___
 * http://localhost:8080/api/v1/movies/docs
 * http://localhost:8080/api/v1/casts/
 * http://localhost:8080/api/v1/casts/docs
+
+## Docker commands
+
+* `docker-compose up -d`
+* `docker-sompose down`
